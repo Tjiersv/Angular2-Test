@@ -12,6 +12,8 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
 var header_component_1 = require('./components/header.component');
+var body_component_1 = require('./components/body.component');
+var footer_component_1 = require('./components/footer.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -19,7 +21,9 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule],
             declarations: [app_component_1.AppComponent,
-                header_component_1.HeaderComponent
+                header_component_1.HeaderComponent,
+                body_component_1.BodyComponent,
+                footer_component_1.FooterComponent,
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 
