@@ -1,1 +1,48 @@
-<p>Body Componente</p>
+
+<!-- MAIN TITLE -->
+<h1>Directivas Estructurales</h1>
+<hr>
+
+<!-- BODY -->
+<div class="row">
+  <!-- NGIF -->
+  <div class="col-md-6">
+    <!-- NGIF - TITLE -->
+    <h3>*ngIf</h3>
+    <hr>
+    <!-- NGIF - BUTTON -->
+    <button
+      (click)="mostrar = !mostrar"
+      type="button"
+      class="btn btn-outline-primary btn-block"
+    >
+      Mostrar/Ocultar
+    </button>
+    <br>
+    <!-- NGIF - BLOCK-OF-TEXT -->
+    <div
+      *ngIf="mostrar"
+      class="card card-inverse card-info mb-3 text-center"
+    >
+      <div class="card-block">
+        <blockquote class="card-blockquote">
+          <p>{{text}}</p>
+          <footer>Autor : <cite title="Source Title">{{author}}</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <!-- NGIFOR -->
+  <div class="col-md-6">
+    <!-- NGFOR - TITLE -->
+    <h3>*ngFor</h3>
+    <hr>
+    <!-- NGFOR - LIST -->
+    <ul>
+      <li *ngFor="let personaje of personajes; let i = index"
+          class="list-group-item">
+          {{ i + 1 }} - {{ personaje }}
+      </li>
+    </ul>
+  </div>
+</div>
