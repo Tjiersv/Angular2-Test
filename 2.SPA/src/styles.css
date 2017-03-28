@@ -1,9 +1,15 @@
+/*CSS*/
 body{
   padding-bottom: 50px
 }
-/*CSS*/
+
 .main-container{
   margin-top: 20px
+}
+
+.img-logo {
+  max-width: 25%;
+  max-height: 25%;
 }
 
 /* ANIMATEs*/
