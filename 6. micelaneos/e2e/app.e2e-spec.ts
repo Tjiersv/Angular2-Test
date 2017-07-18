@@ -1,14 +1,14 @@
-import { MicelaneosPage } from './app.po';
+import { MiscPage } from './app.po';
 
-describe('micelaneos App', () => {
-  let page: MicelaneosPage;
+describe('misc App', () => {
+  let page: MiscPage;
 
   beforeEach(() => {
-    page = new MicelaneosPage();
+    page = new MiscPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });
