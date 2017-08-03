@@ -1,44 +1,12 @@
+<app-navbar></app-navbar>
+
 <!-- start content -->
 <div class="container mt-5">
 
   <h1>Demo  <small>angular</small></h1>
   <hr>
 
-  <!-- NgStyles -->
-  <div class="card">
-    <div class="card-header">
-      <h2 class="card-title">NgStyle</h2>
-    </div>
-    <div class="card-block">
-      <app-ng-style></app-ng-style>
-    </div>
-  </div>
-  <br>
-
-  <!-- Css -->
-  <div class="card">
-    <div class="card-header">
-      <h2 class="card-title">Css</h2>
-    </div>
-    <div class="card-block">
-      <p>
-        hola Mundo, desde app.component
-      </p>
-      <app-css></app-css>
-    </div>
-  </div>
-  <br>
-  
-  <!-- NgClass -->
-  <div class="card">
-    <div class="card-header">
-      <h2 class="card-title">NgClass</h2>
-    </div>
-    <div class="card-block">
-      <app-clases></app-clases>
-    </div>
-  </div>
-
+  <router-outlet></router-outlet>
 
 </div>
 <!-- end content -->
