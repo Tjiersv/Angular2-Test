@@ -1,0 +1,46 @@
+<h1>Heroes</h1>
+<hr>
+
+<!-- boton agregar heroes -->
+<div class="agregar-heroes">
+  <div class="row">
+    <div class="col-md-12 text-right">
+      <button class="btn btn-outline-primary" [routerLink]="['/heroe','nuevo']">
+        Nuevo Heroe
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- tabla de heroes -->
+<div class="table-heroes">
+  <div class="row animated fadeIn fast">
+    <div class="col-md-12">
+      <div class="table-responsive">
+
+        <table class="table table-inverse">
+
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nombre</th>
+              <th>Casa</th>
+              <th>Opciones</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+          </tbody>
+
+        </table>
+
+      </div>
+    </div>
+  </div>
+</div>
